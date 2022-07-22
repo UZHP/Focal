@@ -872,7 +872,7 @@ hr {
 
 @media (max-width: 1000px) {
     .header .sliderSection {
-        height: 670px;
+        height: 650px;
     }
 
     .header .sliderSection .allSlider h2 {
