@@ -1,0 +1,861 @@
+/* 
+    - This is Made With Love By Youssef Tamer 
+    - Start in 2022/7/21
+    - All Copy Rights Reserved To ExtentionYT
+*/
+
+/* ========== Start Global ========== */
+
+:root {
+    --whiteC: #FFF;
+    --darkC: #252F31;
+    --lightGC: #2ECC71;
+    --lightRC: #CC2E2E;
+    --lightC: #F2F2F2;
+    --darkWC: #6A6E71;
+    --darkGC: #191E22;
+    --darkGC2: #4B5557;
+    --darkWC2: #4F5254;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: var(--whiteC);
+    font-family: "Cairo", sans-serif;
+    text-transform: capitalize;
+    line-height: 1.6;
+}
+
+hr {
+    border: 1px solid var(--darkWC);
+}
+
+.container {
+    width: 75%;
+    margin: auto
+}
+
+/* ========== End Global ========== */
+
+/* ========== Start Header ========== */
+
+/* ========== Start Slider ========== */
+
+.header .sliderSection {
+    background-color: var(--lightC);
+    background-image: url("https://i.postimg.cc/wM46bHPj/Header-Img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 610px;
+}
+
+.header .sliderSection .allSlider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.header .sliderSection .allSlider h2 {
+    color: var(--whiteC);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    border-top: 2.5px solid var(--whiteC);
+    border-bottom: 2.5px solid var(--whiteC);
+    padding: 0 10px;
+}
+
+.header .sliderSection .allSlider a {
+    color: var(--whiteC);
+    padding: 5px 20px;
+    outline: 2.5px solid var(--whiteC);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header .sliderSection .allSlider a:hover {
+    background-color: var(--whiteC);
+    color: var(--lightGC);
+}
+
+/* ========== End Slider ========== */
+
+/* ========== Start Nav ========== */
+
+.header .navSection {
+    color: var(--whiteC);
+    background-color: var(--darkC);
+    padding: 20px 0
+}
+
+.header .navSection .navCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.header .navSection .navCont a {
+    color: var(--whiteC);
+    text-decoration: none;
+}
+
+.header .navSection .navCont h2 {
+    text-transform: uppercase;
+}
+
+.header .navSection .navCont h2 span {
+    color: var(--lightGC);
+}
+
+.header .navSection .navCont ul {
+    list-style: none;
+    text-align: center
+}
+
+.header .navSection .navCont ul li {
+    margin: 0 10px;
+    display: inline-block
+}
+
+.header .navSection .navCont ul li a {
+    color: var(--whiteC);
+    text-decoration: none;
+}
+
+.header .navSection .navCont ul li.active a,
+.header .navSection .navCont ul li a:hover {
+    color: var(--lightGC);
+}
+
+/* ========== End Nav ========== */
+
+/* ========== End Header ========== */
+
+/* ========== Start Features ========== */
+
+.featuresSection {
+    padding: 100px 0;
+}
+
+.featuresCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.feature {
+    width: calc(100% / 3 - 20px);
+}
+
+.feature h2 {
+    color: var(--darkWC2);
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.feature p {
+    color: var(--darkWC);
+}
+
+
+/* ========== End Features ========== */
+
+/* ========== Start About ========== */
+
+.aboutSection {
+    background-color: var(--lightC);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+}
+
+.aboutSection .aboutImg {
+    width: calc(100% / 3 + 80px);
+    height: 1000px;
+    background-image: url("https://i.postimg.cc/3NzCYNJc/FOM-1794.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.aboutSection .aboutImg img {
+    width: 100%;
+}
+
+.aboutInfo {
+    width: calc(100% / 2.5 + 80px);
+    margin: 0 80px;
+    padding: 80px 0;
+}
+
+.aboutInfo h2 {
+    color: var(--darkWC2);
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.aboutInfo > p {
+    color: var(--darkWC);
+    margin-bottom: 20px;
+}
+
+.aboutInfo > p:nth-last-of-type(1) {
+    margin-bottom: 40px;
+}
+
+.aboutInfo .hobbiesSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap row;
+}
+
+.aboutInfo .hobbiesSection .hobbies {
+    color: var(--darkWC);
+    width: 50%;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.aboutInfo .hobbiesSection .hobbies h3 {
+    color: var(--darkWC2);
+    margin-bottom: 10px;
+}
+
+.aboutInfo .hobbiesSection .hobbies p {
+    width: 65%;
+}
+
+.aboutInfo .hobbiesSection .hobbies .hobbiesIcon {
+    margin-right: 15px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.aboutInfo .hobbiesSection .hobbies .hobbiesIcon svg {
+    fill: var(--lightGC);
+}
+
+.aboutInfo .hobbiesSection .hobbies .hobbiesIcon i {
+    color: var(--lightGC);
+    font-size: 40px;
+}
+
+/* ========== End About ========== */
+
+/* ========== Start Skills ========== */
+
+.skillsSection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.skillsSection .skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skillsSection .skills .skillsInfo {
+    width: calc(50% - 40px);
+    margin-right: 40px;
+}
+
+.skillsSection .skills .skillsInfo h2 {
+    color: var(--darkWC2);
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skillsSection .skills .skillsInfo p {
+    color: var(--darkWC);
+    margin-bottom: 20px;
+}
+
+.skillsSection .skills .skillsInfo a {
+    color: var(--lightGC);
+    padding: 10px 20px;
+    outline: 2.5px solid var(--lightGC);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    /* width: 200px; */
+}
+
+.skillsSection .skills .skillsInfo a:hover {
+    color: var(--whiteC);
+    background-color: var(--lightGC);
+}
+
+.skillsSection .skills .skillsProgress {
+    width: 50%;
+}
+
+.skillsSection .skills .skillsProgress .skill {
+    margin-bottom: 20px;
+}
+
+.skillsSection .skills .skillsProgress .skill:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.skillsSection .skills .skillsProgress .skill h3 {
+    color: var(--darkWC2);
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skillsSection .skills .skillsProgress .skill span {
+    background-color: var(--lightC);
+    width: 100%;
+    display: block;
+}
+
+.skillsSection .skills .skillsProgress .skill span span {
+    color: var(--whiteC);
+    background: var(--lightGC);
+    padding: 5px 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.photoshop {
+    width: 90% !important;
+}
+
+.illustrator {
+    width: 80% !important;
+}
+
+.frontend {
+    width: 90% !important;
+}
+
+.backend {
+    width: 70% !important;
+}
+
+/* ========== End Skills ========== */
+
+/* ========== Start Resume ========== */
+
+.resumeSection {
+    background-color: var(--lightC);
+    padding: 80px 0;
+    position: relative;
+}
+
+.resumeSection::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 20px solid var(--lightC);
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+
+.resumeSection .resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.resumeSection .resume h2 {
+    color: var(--darkWC2);
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.resumeSection .resume p {
+    color: var(--darkWC);
+    margin-bottom: 30px;
+}
+
+.resumeSection .resume a {
+    color: var(--lightGC);
+    padding: 10px 15px;
+    outline: 2.5px solid var(--lightGC);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    width: 175px;
+}
+
+.resumeSection .resume a:hover {
+    color: var(--whiteC);
+    background-color: var(--lightGC);
+}
+
+/* ========== End Resume ========== */
+
+/* ========== Start Education ========== */
+
+.eachDown {
+    margin-top: 60px;
+}
+
+.educationSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.educationSection .allEducation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.educationSection .allEducation .education {
+    width: 50%;
+}
+
+
+.educationSection .allEducation .education:nth-child(1) {
+    margin-right: 40px;
+}
+
+.educationSection .allEducation .education h2 {
+    color: var(--darkWC2);
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.educationSection .allEducation .education p {
+    color: var(--darkWC);
+    margin-bottom: 20px;
+}
+
+
+.educationSection .allEducation .education .educationEach {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.educationSection .allEducation .education .educationEach:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.educationSection .allEducation .education .educationEach h2 {
+    margin-bottom: -2.5px;
+    font-size: 24px;
+}
+
+.educationSection .allEducation .education .educationEach h4 {
+    color: var(--darkWC2);
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.educationSection .allEducation .education .educationEach span {
+    color: var(--whiteC);
+    background-color: var(--lightGC);
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-flex;
+}
+
+.educationSection .allEducation .education .educationEach hr {
+    margin: 20px 0;
+}
+
+/* ========== End Education ========== */
+
+/* ========== Start Experience ========== */
+
+.experienceSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.experienceSection .allExperience {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.experienceSection .allExperience .experience {
+    width: 50%;
+}
+
+.experienceSection .allExperience .experience:nth-child(1) {
+    margin-right: 40px;
+}
+
+.experienceSection .allExperience .experience h2 {
+    color: var(--darkWC2);
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.experienceSection .allExperience .experience p {
+    color: var(--darkWC);
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.experienceSection .allExperience .experience .experienceEach {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.experienceSection .allExperience .experience .experienceEach:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+.experienceSection .allExperience .experience .experienceEach h2 {
+    margin-bottom: -2.5px;
+    font-size: 24px;
+}
+
+.experienceSection .allExperience .experience .experienceEach h4 {
+    color: var(--darkWC2);
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.experienceSection .allExperience .experience .experienceEach span {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    color: var(--whiteC);
+    background-color: var(--lightGC);
+    font-weight: bold;
+    display: inline-flex;
+}
+
+.experienceSection .allExperience .experience .experienceEach hr {
+    margin: 20px 0;
+}
+
+/* ========== End Experience ========== */
+
+/* ========== End Testimonials ========== */
+
+.testimonialsSection {
+    padding: 80px 0;
+    background-color: var(--lightC);
+    text-align: center;
+}
+
+.testimonialsSection q {
+    color: var(--darkWC);
+    font-style: italic;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.testimonialsSection span {
+    color: var(--darkWC);
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.testimonialsSection .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonialsSection .filledDot {
+    width: 12.5px;
+    height: 12.5px;
+    background-color: var(--lightGC);
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.testimonialsSection .filledDot:hover {
+    background-color: var(--darkC);
+}
+
+.testimonialsSection .dot {
+    width: 12.5px;
+    height: 12.5px;
+    border-radius: 50%;
+    border: 2px solid var(--lightGC);
+    margin: 0 10px;
+}
+
+.testimonialsSection .dot:hover {
+    background-color: var(--lightGC);
+}
+
+/* ========== End Testimonials ========== */
+
+/* ========== End Portfolio ========== */
+
+.portfolioSection {
+    padding: 80px 0;
+    text-align: center
+}
+
+.portfolioSection h2 {
+    color: var(--darkWC2);
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+.portfolioSection p {
+    color: var(--darkWC);
+    margin-bottom: 40px;
+}
+
+.portfolioSection .allPortfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap
+}
+
+.portfolioSection .allPortfolio .filter {
+    width: calc(100% / 3 - 20px);
+    height: 337.25px;
+    background-color: #252f31;
+    color: #FFF;
+    padding: 30px;
+    margin-bottom: 30px
+}
+
+.portfolioSection .allPortfolio .filter span {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold
+}
+
+.portfolioSection .allPortfolio .filter ul {
+    list-style: none
+}
+
+.portfolioSection .allPortfolio .filter ul li {
+    cursor: pointer
+}
+
+.portfolioSection .allPortfolio .filter .darkC {
+    color: var(--darkWC);
+}
+
+.portfolioSection .allPortfolio .filter ul li:hover {
+    color: var(--lightGC)
+}
+
+.portfolioSection .allPortfolio .portfolio {
+    color: rgb(255, 255, 255);
+    width: 297.25px;
+    height: 207.25px;
+    margin: 0 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2.5px solid var(--darkWC);
+}
+
+.portfolioSection .allPortfolio .portfolio img {
+    height: 100%;
+    position: relative;
+}
+
+.portfolioSection .allPortfolio .portfolio:hover img {
+    height: 97.5%;
+}
+
+/* ========== End Portfolio ========== */
+
+/* ========== Start Contact ========== */
+
+.contactSection {
+    color: var(--whiteC);
+    background-color: var(--darkC);
+    padding: 80px 0
+}
+
+.contactSection .allContact {
+    color: var(--darkWC);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contactSection .allContact .contactText {
+    width: 47.5%;
+}
+
+.contactSection .allContact .contactText .contactHead {
+    margin-bottom: 40px;
+}
+
+.contactSection .allContact .contactText .contactHead h2 {
+    color: var(--whiteC);
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+.contactSection .allContact .contactText .contactAbout {
+    margin-bottom: 40px;
+}
+
+.contactSection .allContact .contactText .contactInfo p span {
+    color: var(--whiteC);
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.contactSection .allContact .contactForm {
+    width: 47.5%;
+}
+
+.contactSection .allContact .contactForm form {
+    width: 100%;
+}
+
+.contactSection .allContact .contactForm form .inputSection {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactSection .allContact .contactForm form .inputSection label {
+    color: var(--whiteC);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.contactSection .allContact .contactForm form .inputSection label span {
+    color: var(--lightRC);
+}
+
+.contactSection .allContact .contactForm form .inputSection input::after {
+    content: "*";
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    color: var(--whiteC);
+}
+
+.contactSection .allContact .contactForm form .inputSection input {
+    color: var(--whiteC);
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    background-color: var(--darkGC2);
+}
+
+.contactSection .allContact .contactForm form .inputSection textarea {
+    color: var(--whiteC);
+    background-color: var(--darkGC2);
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    min-height: 250px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.contactSection .allContact .contactForm form > input {
+    color: var(--whiteC);
+    background-color: var(--darkGC);
+    padding: 15px 30px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    font-size: inherit;
+    font-family: inherit;
+    text-transform: inherit;
+    cursor: pointer;
+}
+
+/* ========== End Contact ========== */
+
+/* ========== Start Footer ========== */
+
+.footerSection {
+    padding: 20px 0;
+    background-color: var(--darkGC);
+    text-align: center;
+}
+
+.footerSection .footerText {
+    color: var(--darkWC);
+    margin-bottom: 10px;
+}
+
+.footerSection .footerLinks {
+    line-height: 1;
+}
+
+.footerSection .footerLinks a {
+    text-decoration: none;
+}
+
+.footerSection .footerLinks i {
+    color: var(--darkWC);
+    width: 20px;
+    height: 20px;
+    margin: 2.5px;
+    font-size: 20px;
+}
+
+.footerSection .footerLinks i:hover {
+    color: var(--lightGC);
+}
+
+/* ========== End Footer ========== */
+
+@media (max-width: 900px) {
+    .resumeSection .resume p,
+    .testimonialsSection q {
+        font-size: 9px;
+    }
+    .portfolioSection p {
+        font-size: 11.5px;
+    }
+}
