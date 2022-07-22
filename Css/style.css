@@ -977,15 +977,6 @@ hr {
         margin-bottom: 40px;
     }
 
-    .resumeSection .resume p,
-    .testimonialsSection q {
-        font-size: 9px;
-    }
-
-    .portfolioSection p {
-        font-size: 11.5px;
-    }
-
     .portfolioSection .allPortfolio .portfolio {
         width: fit-content;
         height: 187.25px;
