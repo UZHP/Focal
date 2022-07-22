@@ -871,6 +871,10 @@ hr {
 /* ========== Start Media ========== */
 
 @media (max-width: 1000px) {
+    .header .sliderSection {
+        height: 670px;
+    }
+
     .header .sliderSection .allSlider h2 {
         font-size: 24px;
     }
