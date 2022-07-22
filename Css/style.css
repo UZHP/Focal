@@ -40,6 +40,30 @@ hr {
     margin: auto
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: var(--whiteC);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: var(--lightGC);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--darkGC);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--whiteC);
+}
+
 /* ========== End Global ========== */
 
 /* ========== Start Header ========== */
