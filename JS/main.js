@@ -6,6 +6,23 @@ function vanish() {
     loader.classList.add("disappear")
 }
 
+let spanTop = document.querySelector(".top");
+window.onscroll = function () {
+    console.log(this.scrollY);
+    if (this.scrollY >= 540) {
+        spanTop.classList.add("show");
+    } else {
+        spanTop.classList.remove("show");
+    };
+};
+
+spanTop.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
+
 var button = document.querySelector(".list");
 var list = document.querySelector(".navHover")
 

@@ -29,6 +29,7 @@ body {
     font-family: "Cairo", sans-serif;
     text-transform: capitalize;
     line-height: 1.6;
+    position: relative;
 }
 
 hr {
@@ -62,6 +63,35 @@ hr {
 
 ::-webkit-scrollbar-corner {
     background-color: var(--whiteC);
+}
+
+body>.top {
+    color: var(--whiteC);
+    background-color: var(--darkGC2);
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    bottom: -40px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+body>.top:hover {
+    background-color: var(--darkGC);
+}
+
+.top.show {
+    bottom: 20px;
 }
 
 /* ========== End Global ========== */
