@@ -1138,6 +1138,10 @@ body>.top:hover {
     .footerSection .footerLinks {
         display: block;
     }
+
+    .footerSection .footerText {
+        margin-bottom: 0;
+    }
 }
 
 /* ========== End Media ========== */
