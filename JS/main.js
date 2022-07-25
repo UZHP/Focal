@@ -8,7 +8,7 @@ function vanish() {
 
 let spanTop = document.querySelector(".top");
 window.onscroll = function () {
-    console.log(this.scrollY);
+    // console.log(this.scrollY);
     if (this.scrollY >= 540) {
         spanTop.classList.add("show");
     } else {
@@ -33,3 +33,15 @@ button.onclick = function () {
         list.classList.remove("open")
     }
 }
+
+/*global $, alert, console*/
+
+$(function () {
+
+    'use strict';
+
+    $('.navCont li').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
+});
