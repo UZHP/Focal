@@ -1,8 +1,9 @@
 /* 
-    - This is Made With Love By Youssef Tamer 
+    - This is Made With Love By Youssef Tamer
     - Start in 2022/7/21
     - Finished in 2022/7/23
     - At 10 to 15 hours
+    - Lines : [ HTML = 475 | CSS = 1154 | JS = 47 ] = 1790
     - All Copy Rights Reserved To ExtentionYT
 */
 
@@ -111,7 +112,7 @@ body>.top:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    height: 100vh;
 }
 
 .header .sliderSection .allSlider {
@@ -271,13 +272,9 @@ body>.top:hover {
 }
 
 .featuresCont {
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
-
-.feature {
-    width: calc(100% / 3 - 20px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .feature h2 {
@@ -995,10 +992,6 @@ body>.top:hover {
 /* ========== Start Media ========== */
 
 @media (max-width: 1000px) {
-    .header .sliderSection {
-        height: 650px;
-    }
-
     .header .sliderSection .allSlider h2 {
         font-size: 24px;
     }
@@ -1009,11 +1002,6 @@ body>.top:hover {
 
     .header .navSection .navCont .list {
         display: inline-block;
-    }
-
-    .featuresCont {
-        justify-content: center;
-        flex-direction: column;
     }
 
     .feature {
